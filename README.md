@@ -13,18 +13,18 @@ The purpose of the challenge was to gain insight into trends and factors by aggr
 
 ## Analysis 
 
-Re-running the school district analysis had two components:
+The analysis had several components:
 
-(1) replacing the scores of the 9th grade Thomas High School students with 'NaN' - which effectively impacted all the aggregate stats in which these scores had previously been included;  and
+(1) loading the csv files into dataframes and merging them together;  and
 
-(2) Removing the 9th grade Thomas High School students from the population totals - which effectively impacted all the aggregate population related stats in which these students had previously been included (e.g., total students, per-student stats, etc.)
+(2) building the basic sums and averages for things such as total fares and rides, and per-unit stats such as average fare per city type and driver; then combining them into an overall summary dataframe and formatting it; and 
 
-### Analysis approach 
+(3) creating a dataframe grouped by both date and city type and using it as a basis from which to create a pivot df with an index of date, columns by city type and fares sum as values; 
 
-The analysis involved unsing the pandas 'loc' method and numPy to identify all the 9th graders from Thomas High School and replacing only their grades with 'NaN".   It was then necessary to re-run all the grade statistics, sorts and aggregations with the Thomas High School 9th graders effectively removed from the data since they no longer have scores which contribute to the computed means, % pass for math/reading/overall or student population counts.  This has a small, but pervasive effect on the outcomes of the analysis.     
+(4) resampling the pivot dataframe, by week, and using this df to drive a line-graph visualization of the ride fares by city type over time
 
 
-### Summary
+## Summary
 
 Removing the Thomas High School 9th grader scores causes the averages for Math, Reading and Overall to fall slightly.  It also lowers the same set of stats for the budget and population range aggregations - where Thomas High School meets the grouping criteria (school type, school size and budget range). 
 

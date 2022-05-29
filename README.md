@@ -26,60 +26,30 @@ The analysis had several components:
 
 ## Summary
 
+The analysis was done in two ways, the first being an overall summary of ride volume, fares and drivers - with average stats on a per-ride and per-driver basis as indicated in the below table:  
+
+## Summary
+
+![img](https://github.com/fhsal/PyBer_rides/blob/main/images/summary.png)
+
+This appears to indicate that there are many more drivers in the Urban cities by a wide margin than in either rural or suburban areas.  Although the number of rides is also larger and those rides have lower fares on average (which may imply shorter), on a proportional basis it is far beyond the other cities.  The impact of this and potential choices to be made regarding the number of drivers appropriate to service the demand may be an area of further analysis.  
+
+The second aspect of the analysis was time-based, showing the trend from January through April for fares based upon the city type, below:
+
+## Fare Trends
+
+![img](https://github.com/fhsal/PyBer_rides/blob/main/images/chart.png)
+
+This perspective is consistent with the overall summary in that urban fares are much higer than suburban and rural cities.   Although there is more variance in the urban fares, the fares appear to be relatively consistent over time.   
+
 Removing the Thomas High School 9th grader scores causes the averages for Math, Reading and Overall to fall slightly.  It also lowers the same set of stats for the budget and population range aggregations - where Thomas High School meets the grouping criteria (school type, school size and budget range). 
 
-### Specific metrics impact 
+## Recommendations 
 
-The several school district metrics impacted by removing the Thomas High School students from the data and analysis are summarized below.  Note that the dark VS Code images are "before" and the lighter Jypyter Notebook images are "after" in the bulleted items shown here.  
+- Perform further analysis to determine the best balance of the number of drivers in each city type.  There are likely other factors beyond volume and revenue, such as pick-up times that would influence the right balance.  
 
-- The average test scores were lowered for both Math and Reading 
+- It does look like there may not be a need for so many urban drivers - alternatively, perhaps boosting the number of suburban or rural drivers may drive volume and revenue upwards.   
 
-**Before:**
-
-![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/before_Avg_scores.png)
-
-**after:**  
-
-![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/after_Avg_scores.png)
+- Better understanding the cause of the higher levels of fluctuation in the urban fares and the spike across the board in late February may also be worthwhile 
 
 
--The percent passing scores were lowered for Math, Reading and Overall
-
-**Before:**
-
-![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/before_passing_percent.png)
-
-**After:**
-
-![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/after_passing_percent.png)
-
-
-- The Spending Ranges Per Student roll-ups were impacted where Thomas High School is represented in the $631-645 grouping
-
-**Before:**
-
-![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/before_spending.png)
-
-**After:**
-
-![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/after_spending.png)
-
-- The Size Ranges  roll-ups were impacted where Thomas High School is represented in the medium grouping
-
-**Before:**
-
-![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/before_size.png)
-
-**After:**
-
-![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/after_size.png)
-
-- The school type roll-ups were impacted where Thomas High School is represented in charter grouping
-
-**Before:**
-
-![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/before_type.png)
-
-**After:**
-
-![img](https://github.com/fhsal/PyCity_Schools/blob/main/Images/after_type.png)
